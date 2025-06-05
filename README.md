@@ -1,0 +1,1 @@
+ 猜枚 is a game where each player simultaneously reveals their hand, extending any number of fingers, and calls out a number. Any player who successfully guesses the total number of fingers revealed by all players combined scores a point.
