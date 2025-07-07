@@ -84,6 +84,7 @@ function reset(){
     guessButtons.forEach(playerguess => {playerguess.removeEventListener("click", guessfunc)});
     console.log("finished resetting.");
 }
+/*
 function buttonPromise(){
     console.log("---------------------------");
     console.log("Buttonpromise();");
@@ -99,6 +100,21 @@ function buttonPromise(){
             }}, 100);
     });
 }
+*/
+function checkButtons(){
+    const intervall = setInterval(() => {
+        if (guessStatus && choiceStatus){
+            clearInterval(intervall);
+            buttonsPressedd();
+        }
+    }, 200);
+}
+function buttonsPressedd(){
+    determineWinner(binput(), playerNum, chosenNumber, turnvar);
+    turn();
+    reset();
+}
+/*
 async function buttonsPressed(){
     console.log("-----------------------------");
     console.log("buttonspressed();");
@@ -114,6 +130,7 @@ async function buttonsPressed(){
         console.log("Buttons not pressed." + choiceStatus + guessStatus);
     }
 }
+*/
 
 
 function game(){
