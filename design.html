@@ -4,19 +4,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CaiMui</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        
     </head>
     <body> 
         <h1>猜枚</h1>
+        <h3 id="winning status"></h3>
         <div>  
-            <button class="player choice" type="button">0</button>
-            <button class="player choice" type="button">5</button>
-            <button class="player choice" type="button">10</button>
+            <h2>Choose!</h2>
+            <button id = "1" onclick="pinput(0)" class="playerchoice" type="button">0</button>
+            <button onclick="pinput(5)"class="playerchoice" type="button">5</button>
+            <button onclick="pinput(10)" class="playerchoice" type="button">10</button>
         </div>
         <div>  
-            <button class="player guess" type="button">0</button>
-            <button class="player guess" type="button">5</button>
-            <button class="player guess" type="button">10</button>
+            <h2>Guess!</h2>
+            <button onclick="chosenNum(0)"class="playerguess" type="button">0</button>
+            <button onclick="chosenNum(5)" class="playerguess" type="button">5</button>
+            <button onclick="chosenNum(10)" class="playerguess" type="button">10</button>
+            <button onclick="chosenNum(15)" class="playerguess" type="button">15</button>
+            <button onclick="chosenNum(20)" class="playerguess" type="button">20</button>
         </div>
+        <h1 id="test"></h1>
+        <script src="logic.js"></script>
     </body>
-    </html>
+</html>
