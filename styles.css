@@ -1,4 +1,125 @@
-div{
-margin: auto;
-background-color: red;
+.all{
+    display: flex;
+    height: 100%;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    width:20%;
+}
+.Game_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30%;
+    margin-bottom: 20px;
+}
+.title {
+    display: flex;
+    writing-mode: vertical-lr;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70%;
+    font-size: 5vh;
+    font-size: 5vw;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+.input{
+    display: flex;
+    height: 80%;
+    
+}
+
+.inputRight, .inputLeft {
+    width: 50%;
+}
+.guessButtons, .chooseButtons {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+}
+.buttonTitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height:30%;
+}
+.specialButton{
+    display: flex;
+    justify-content: space-evenly;
+}
+button {
+    padding: 25px 50px;
+    border-radius: 20%;
+}
+
+.inputInfo {
+    display:flex;
+    height: 20%;
+}
+.playerInfo, .botInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.guessButtons, .chooseButtons, .inputInfo{
+    background-color: rgb(266,159,39, 0.2);
+}
+.chooseButtons, .inputInfo{
+    margin-left: 20px;
+}
+.chooseButtons{
+    border-top-left-radius: 10%;
+}
+.guessButtons{
+    border-top-right-radius: 10%;
+}
+.inputInfo{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+body {
+    background-image: url("Game_Background.jpg");
+    margin: 10px 15%;
+    
+
+}
+h1{
+    background-color: rgba(97, 97, 97, 0.5);
+    margin: 0px;
+    padding: 40px 0px;
+    border: 20px solid black;
+    border-radius: 15%;
+}
+h2 {
+    margin: 0px;
+    font-size: 4vh;
+    font-size: 4vw;
+}
+h3 {
+    font-size: 2vh;
+    font-size: 2vw;
+    margin: 0px;
+    margin-top: 10px;
+}
+#TW {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -600px;
+    right: -600px;
 }

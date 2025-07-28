@@ -7,23 +7,71 @@
         
     </head>
     <body> 
-        <h1>猜枚</h1>
-        <h3 id="winning status"></h3>
-        <div>  
-            <h2>Choose!</h2>
-            <button id = "1" onclick="pinput(0)" class="playerchoice" type="button">0</button>
-            <button onclick="pinput(5)"class="playerchoice" type="button">5</button>
-            <button onclick="pinput(10)" class="playerchoice" type="button">10</button>
+        <div class="all">
+            <div class="leftSide">
+                <div class = 'Game_Info'>
+                    <h3 id="winning status"></h3>
+                    <h3 id = "rounds">Total rounds: 0</h3>
+                    <h3 id = "turn">Turn: Player</h3>
+                </div>
+                <div class="title">
+                    <h1>猜 枚</h1>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="input">
+                    <div class="inputLeft">
+                        <div class="buttonTitle">
+                            <h2>Choose!</h2>
+                        </div>
+                        <div class="chooseButtons">
+                            <div class="specialButton">
+                                <button onclick="pinput(0)" class="playerchoice" type="button">0</button>
+                            </div>
+                            <div class="specialButton">
+                                <button onclick="pinput(5)"class="playerchoice" type="button">5</button>
+                            </div>
+                            <div class="specialButton">
+                                <button onclick="pinput(10)" class="playerchoice" type="button">10</button>
+                            </div> 
+                        </div>  
+                        
+                    </div>
+                    <div class="inputRight">
+                        <div class="buttonTitle">
+                            <h2>Guess!</h2>
+                        </div>
+                        <div class="guessButtons">
+                            <div class="specialButton">
+                                <button onclick="chosenNum(0)"class="playerguess" type="button">0</button>
+                                <button onclick="chosenNum(5)" class="playerguess" type="button">5</button>
+                            </div>
+                            <div class="specialButton">
+                                <button onclick="chosenNum(10)" class="playerguess" type="button">10</button>
+                            </div>
+                            <div class="specialButton">
+                                <button onclick="chosenNum(15)" class="playerguess" type="button">15</button>
+                                <button onclick="chosenNum(20)" class="playerguess" type="button">20</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="inputInfo">
+                    <div class = 'playerInfo'>
+                        <h3 id = "playersChoice">Player choice: </h3>
+                        <h3 id = "playersguess">Player guess: </h3>
+                    </div>
+                    <div class="botInfo">
+                        <h3 id = "botChoice">Bot choice: </h3>
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
-        <div>  
-            <h2>Guess!</h2>
-            <button onclick="chosenNum(0)"class="playerguess" type="button">0</button>
-            <button onclick="chosenNum(5)" class="playerguess" type="button">5</button>
-            <button onclick="chosenNum(10)" class="playerguess" type="button">10</button>
-            <button onclick="chosenNum(15)" class="playerguess" type="button">15</button>
-            <button onclick="chosenNum(20)" class="playerguess" type="button">20</button>
-        </div>
-        <h1 id="test"></h1>
+        <img id="TW" src = "TWlose.jpg" alt = "TWpic" ><img>
         <script src="logic.js"></script>
     </body>
 </html>
+
